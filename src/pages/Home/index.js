@@ -1,13 +1,16 @@
 import React from "react";
 
 import Nav from "../../components/Nav";
+import { Homepage, LogoContainer, Logo } from "./styled";
 
 const Home = () => {
   return (
-    <div>
+    <Homepage>
       <Nav />
-      <h1>Home</h1>
-    </div>
+      <LogoContainer>
+        <Logo />
+      </LogoContainer>
+    </Homepage>
   );
 };
 

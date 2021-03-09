@@ -1,14 +1,16 @@
 import React from "react";
 
-import { DropdownNav, DropdownItem } from "./styled";
+import { DropdownNav, DropdownItem, NavLink } from "./styled";
 
-const dropdownItems = ["Inicio", "Menú", "Nosotrxs", "Contacto"];
-
-const Dropdown = ({ isOpen }) => {
+const Dropdown = ({ isOpen, dropdownItems }) => {
   return (
     <DropdownNav isOpen={isOpen}>
       {dropdownItems.map((dropdownItem) => {
-        return <DropdownItem key={dropdownItem}>{dropdownItem}</DropdownItem>;
+        return (
+          <DropdownItem key={dropdownItem.name}>
+            <NavLink to={dropdownItem.link}>{dropdownItem.name}</NavLink>
+          </DropdownItem>
+        );
       })}
     </DropdownNav>
   );

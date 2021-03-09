@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 
-import { NavItem, NavUl, NavContainter } from "./styled";
+import { NavItem, NavUl, NavContainter, NavLink } from "./styled";
 import Hamburger from "./Hamburger";
 import Dropdown from "./Dropdown";
+
+const dropdownItems = [
+  { name: "Inicio", link: "/" },
+  { name: "Menú", link: "/" },
+  { name: "Nosotrxs", link: "/" },
+  { name: "Contacto", link: "/contact" },
+];
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,13 +17,16 @@ const Nav = () => {
   return (
     <NavContainter>
       <NavUl>
-        <NavItem>Inicio</NavItem>
-        <NavItem>Menú</NavItem>
-        <NavItem>Nosotrxs</NavItem>
-        <NavItem>Contacto</NavItem>
+        {dropdownItems.map((dropdownItem) => {
+          return (
+            <NavItem key={dropdownItem.name}>
+              <NavLink to={dropdownItem.link}>{dropdownItem.name}</NavLink>
+            </NavItem>
+          );
+        })}
       </NavUl>
       <Hamburger onClick={setIsOpen} isOpen={isOpen} />
-      <Dropdown isOpen={isOpen} />
+      <Dropdown isOpen={isOpen} dropdownItems={dropdownItems} />
     </NavContainter>
   );
 };
