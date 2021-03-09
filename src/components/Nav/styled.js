@@ -3,19 +3,24 @@ import { Link } from "react-router-dom";
 
 export const NavContainter = styled.div`
   width: 100vw;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: #ae802c;
+
+  @media screen and (max-width: 425px) {
+    height: 10vh;
+  }
 `;
 
 export const NavUl = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 10px;
-  padding: 0;
-  border: 2px solid #ae802c;
+  margin: 5px 30px;
+  padding: 9px 20px;
+  border: 3px solid #ae802c;
 
   @media screen and (max-width: 425px) {
     display: none;
@@ -24,9 +29,16 @@ export const NavUl = styled.ul`
 
 export const NavItem = styled.li`
   list-style-type: none;
-  margin: 10px;
+  margin: 10px 20px;
   font-family: "Bodoni";
   font-size: 25px;
+  cursor: pointer;
+`;
+
+export const NavLink = styled(Link)`
+  text-decoration: none;
+  outline: none;
+  color: #ae802c;
 `;
 
 export const DropdownNav = styled.ul`
@@ -58,7 +70,7 @@ export const StyledBurger = styled.button`
   display: none;
   width: 2rem;
   height: 2rem;
-  background: transparent;
+  background-color: #0d163d;
   border: none;
   cursor: pointer;
   padding: 0;
