@@ -6,6 +6,7 @@ export const NavContainter = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: #ae802c;
 `;
 
 export const NavUl = styled.ul`
@@ -14,7 +15,7 @@ export const NavUl = styled.ul`
   justify-content: center;
   margin: 5px 10px;
   padding: 0;
-  border: 1px solid black;
+  border: 2px solid #ae802c;
 
   @media screen and (max-width: 425px) {
     display: none;
@@ -22,9 +23,35 @@ export const NavUl = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  margin: 0;
   list-style-type: none;
   margin: 10px;
+  font-family: "Bodoni";
+  font-size: 25px;
+`;
+
+export const DropdownNav = styled.ul`
+  background: transparent;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #0d163d;
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(57%)" : "translateY(-100%)"};
+`;
+
+export const DropdownItem = styled.li`
+  list-style-type: none;
+  margin: 10px;
+  font-family: "Bodoni";
+  font-size: 25px;
+  border-bottom: 1px solid #ae802c;
+  padding: 10px;
+  color: #ae802c;
 `;
 
 export const StyledBurger = styled.button`
@@ -43,7 +70,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: black;
+    background: #ae802c;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

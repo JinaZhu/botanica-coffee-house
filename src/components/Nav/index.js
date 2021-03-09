@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { NavItem, NavUl, NavContainter } from "./styled";
 import Hamburger from "./Hamburger";
+import Dropdown from "./Dropdown";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const Nav = () => {
         <NavItem>Contacto</NavItem>
       </NavUl>
       <Hamburger onClick={setIsOpen} isOpen={isOpen} />
+      <Dropdown isOpen={isOpen} />
     </NavContainter>
   );
 };
