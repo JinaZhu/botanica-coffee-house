@@ -15,6 +15,10 @@ export const NavUl = styled.ul`
   margin: 5px 10px;
   padding: 0;
   border: 1px solid black;
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -24,9 +28,7 @@ export const NavItem = styled.li`
 `;
 
 export const StyledBurger = styled.button`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: none;
   width: 2rem;
   height: 2rem;
   background: transparent;
@@ -34,14 +36,14 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  margin-right: 5px;
+  margin: 5px 10px;
   &:focus {
     outline: none;
   }
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${(props) => props.color || "black"};
+    background: black;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -57,5 +59,11 @@ export const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
     }
+  }
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 `;
