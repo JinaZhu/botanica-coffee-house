@@ -7,8 +7,8 @@ import Dropdown from "./Dropdown";
 const dropdownItems = [
   { name: "Inicio", link: "/" },
   { name: "Menú", link: "/" },
-  { name: "Nosotrxs", link: "/" },
-  { name: "Contacto", link: "/contact" },
+  { name: "Nosotrxs", link: "/nosotrxs" },
+  { name: "Contacto", link: "/contacto" },
 ];
 
 const Nav = () => {

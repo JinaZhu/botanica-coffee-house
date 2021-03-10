@@ -85,6 +85,12 @@ export const RedirectLink = styled.a`
   margin: 7px 5px;
 `;
 
+export const MapRedirect = styled.a`
+  font-size: 20px;
+  color: #ae802c;
+  text-decoration: none;
+`;
+
 export const ContactInfoContainer = styled.div`
   display: flex;
   align-items: flex-start;
