@@ -17,9 +17,9 @@ export const Logo = styled.img.attrs({
   src: `${logoImagePath}`,
   alt: "Logo",
 })`
-  width: 35vw;
+  width: 450px;
 
   @media screen and (max-width: 425px) {
-    width: 80vw;
+    width: 325px;
   }
 `;

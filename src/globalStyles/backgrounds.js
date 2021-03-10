@@ -5,7 +5,7 @@ import botanicaMobileImagePath from "../images/botanica-background-mobile.png";
 
 export const BotanicaMidnightBackground = styled.div`
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(${botanicaImagePath});
   background-position: center;
   background-size: cover;
