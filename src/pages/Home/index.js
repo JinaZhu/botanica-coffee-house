@@ -1,16 +1,17 @@
 import React from "react";
 
 import Nav from "../../components/Nav";
-import { Homepage, LogoContainer, Logo } from "./styled";
+import { LogoContainer, Logo } from "./styled";
+import { BotanicaMidnightBackground } from "../../globalStyles/backgrounds";
 
 const Home = () => {
   return (
-    <Homepage>
+    <BotanicaMidnightBackground>
       <Nav />
       <LogoContainer>
         <Logo />
       </LogoContainer>
-    </Homepage>
+    </BotanicaMidnightBackground>
   );
 };
 
