@@ -86,7 +86,7 @@ export const RedirectLink = styled.a`
 `;
 
 export const MapRedirect = styled.a`
-  font-size: 16px;
+  font-size: 20px;
   color: #ae802c;
   text-decoration: none;
 `;
