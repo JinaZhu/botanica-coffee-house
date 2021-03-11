@@ -6,7 +6,7 @@ import Dropdown from "./Dropdown";
 
 const dropdownItems = [
   { name: "Inicio", link: "/" },
-  { name: "Menú", link: "/" },
+  { name: "Menú", link: "/menu" },
   { name: "Nosotrxs", link: "/nosotrxs" },
   { name: "Contacto", link: "/contacto" },
 ];
