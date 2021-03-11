@@ -70,7 +70,7 @@ export const StyledBurger = styled.button`
   display: none;
   width: 2rem;
   height: 2rem;
-  background-color: #0d163d;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
