@@ -2,7 +2,7 @@ import React from "react";
 
 import { MenuSelectionImg, AllMenyPages } from "./styled";
 
-const MenuSelection = ({ menuPages, setDisplayPageNum }) => {
+const MenuSelection = ({ menuPages, setDisplayPageNum, displayPageNum }) => {
   return (
     <AllMenyPages>
       {menuPages.map((menuPage, i) => {
@@ -11,8 +11,9 @@ const MenuSelection = ({ menuPages, setDisplayPageNum }) => {
             key={i}
             src={menuPage}
             alt="menu page"
-            width="70"
+            width="100"
             onClick={() => setDisplayPageNum(i)}
+            isActive={i === displayPageNum}
           />
         );
       })}

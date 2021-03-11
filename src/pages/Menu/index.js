@@ -44,6 +44,7 @@ const Menu = () => {
         <MenuSelection
           menuPages={menuPages}
           setDisplayPageNum={setDisplayPageNum}
+          displayPageNum={displayPageNum}
         />
       </MenuBody>
     </BotanicaMidnightBackground>

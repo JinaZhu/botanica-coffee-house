@@ -2,7 +2,12 @@ import React from "react";
 
 import leftArrow from "../../images/icons/arrow-left.svg";
 import rightArrow from "../../images/icons/arrow-right.svg";
-import { MenuSelectionImg, ArrrowButton } from "./styled";
+import {
+  MenuSelectionImg,
+  ArrrowButton,
+  CurrentViewMenuPage,
+  CarouselContainer,
+} from "./styled";
 
 const MenuPageCarousel = ({ displayPageNum, setDisplayPageNum, menuPages }) => {
   function forward() {
@@ -25,17 +30,19 @@ const MenuPageCarousel = ({ displayPageNum, setDisplayPageNum, menuPages }) => {
   }
 
   return (
-    <div>
-      <img src={menuPages[displayPageNum]} alt="menu page" width="350" />
-      <div>
-        <ArrrowButton onClick={backward}>
-          <MenuSelectionImg src={leftArrow} alt="left arrow" width="30" />
-        </ArrrowButton>
-        <ArrrowButton onClick={forward}>
-          <MenuSelectionImg src={rightArrow} alt="right arrow" width="30" />
-        </ArrrowButton>
-      </div>
-    </div>
+    <CarouselContainer>
+      <ArrrowButton onClick={backward}>
+        <MenuSelectionImg src={leftArrow} alt="left arrow" width="50" />
+      </ArrrowButton>
+      <CurrentViewMenuPage
+        src={menuPages[displayPageNum]}
+        alt="menu page"
+        width="350"
+      />
+      <ArrrowButton onClick={forward}>
+        <MenuSelectionImg src={rightArrow} alt="right arrow" width="50" />
+      </ArrrowButton>
+    </CarouselContainer>
   );
 };
 
