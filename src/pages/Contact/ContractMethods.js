@@ -18,10 +18,12 @@ const ContactMethods = () => {
         <ContactText size={"30px"} margin={"21px 0"}>
           Pedidos
         </ContactText>
-        <ContactText size={"20px"} margin={"17px 0"}>
-          <Icon src={phone} alt="phone" width="15" />
-          60502012
-        </ContactText>
+        <RedirectLink href="tel:59160502012" target="_blank">
+          <ContactText size={"20px"} margin={"17px 0"}>
+            <Icon src={phone} alt="phone" width="15" />
+            +591 (6) 050-2012
+          </ContactText>
+        </RedirectLink>
         <RedirectLink
           href="https://www.instagram.com/botanicacoffeehouse/"
           target="_blank"
@@ -36,9 +38,9 @@ const ContactMethods = () => {
           <Icon src={facebook} alt="phone" width="10" />
           Botánica Coffee House
         </RedirectLink>
-        <RedirectLink href="tel:60502012" target="_blank">
+        <RedirectLink href="tel:59160502012" target="_blank">
           <Icon src={phone} alt="phone" width="14" />
-          60502012
+          +591 (6) 050-2012
         </RedirectLink>
       </ContactDetails>
     </Contacts>
