@@ -23,7 +23,7 @@ export const AddressContainer = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 425px) {
-    width: 250px;
+    width: 260px;
     margin: 10px 0;
   }
 `;
@@ -38,7 +38,7 @@ export const Contacts = styled.div`
   margin: 0 15px;
 
   @media screen and (max-width: 425px) {
-    width: 250px;
+    width: 260px;
     margin: 10px 0;
   }
 `;
