@@ -18,12 +18,12 @@ const ContactMethods = () => {
         <ContactText size={"30px"} margin={"21px 0"}>
           Pedidos
         </ContactText>
-        <RedirectLink href="tel:59160502012" target="_blank">
-          <ContactText size={"20px"} margin={"17px 0"}>
-            <Icon src={phone} alt="phone" width="15" />
-            +591 (6) 050-2012
-          </ContactText>
-        </RedirectLink>
+        <ContactText size={"18px"} margin={"8px 0"}>
+          Horarios de Atención
+        </ContactText>
+        <ContactText size={"18px"} margin={"8px 0"}>
+          Martes - Sábados [7:30 am - 9:30 pm]
+        </ContactText>
         <RedirectLink
           href="https://www.instagram.com/botanicacoffeehouse/"
           target="_blank"
